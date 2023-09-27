@@ -2,11 +2,12 @@
 
 :root {
     --font_12: 12px;
+    --font_16: 16px;
 }
 
 
 
-/* Navbar -top */
+/* Navbar - top */
 .navbar_top{
     background-color: white;
 }
@@ -23,7 +24,8 @@
     font-size: 14px;
 }
 
-.ms_navbar {
+.ms_navbar,
+.main_content {
     background-color: #f8f9fa;
 }
 
@@ -45,6 +47,66 @@
 .fa-bell {
     color: #ff8f00;
 }
+
+/* Navbar - side */
+
+.app_content .side_bar {
+    background-color:  #041e34;
+    background-image: url(../img/sidebar-bg.png);
+    width: 65px; 
+    /* width: 150px; */
+    height: 100%;
+}
+
+.app_content .navbar_side {
+    height: 100%;
+}
+
+.navbar_side-menu-items {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.icon_wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar_side-text {
+    font-size: var(--font_16);
+}
+
+
+/* Media Query - Responsive */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+.app_content .side_bar {
+    width: 150px;
+}
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+ }
 
 
 
