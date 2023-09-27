@@ -4,24 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7d64c20f84.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/app.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>bootstrap Dashboard</title>
 </head>
 
-<body class="debug">
+<body class="debu">
     <!-- Page Wrapper -->
     <div id="app" class="vh-100 d-flex flex-column">
-        <aside class="navbar">
-            
-            <!-- navbar - top -->
-            navbar - top
 
+        <!-- navbar - top -->
+        <aside class="ms_navbar side-bar-top py-3">
+            <nav class="navbar_top container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <div class="navbar_top_logo">
+                            <a class="navbar-brand" href="#">
+                                <img src="./img/logo.svg" alt="Boolean" width="135">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto flex-grow-1">
+                        <div class="navbar_top_search">
+                            <i class="fa-solid fa-magnifying-glass ps-2 pe-1"></i>
+                            <input class="border-0" type="text" name="search-bar" id=""
+                                placeholder="Prova a cercare: Lezioni di laravel">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="navbar_top_menu list-unstyled d-flex m-0">
+                            <li class="navbar_top_menu-items d-none d-sm-block">
+                                <a href="#">
+                                    <i class="fa-solid fa-list-ul"></i>
+                                </a>
+                            </li>
+                            <li class="navbar_top_menu-items d-none d-sm-block">
+                                <a href="#">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                </a>
+                            </li>
+                            <li class="navbar_top_menu-items d-none d-sm-block">
+                                <a href="#">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
+                            </li>
+                            <li class="navbar_top_menu-items">
+                                <a href="#">
+                                    <i class="fa-solid fa-bell"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
         </aside>
 
-        <div class="app-content d-flex flex-grow-1">
-            <header class="side-bar">
+        <div class="app_content d-flex flex-grow-1">
+            <header class="side_bar">
                 <nav>
 
                     <!-- Nav menu - side -->
@@ -30,7 +72,7 @@
                 </nav>
 
             </header>
-            <main class="main-content flex-grow-1">
+            <main class="main_content flex-grow-1">
 
                 <!-- Main content -->
                 main - content
@@ -68,8 +110,8 @@
 
     <!-- Javascript link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

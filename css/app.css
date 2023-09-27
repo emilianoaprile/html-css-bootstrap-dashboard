@@ -1,3 +1,50 @@
+/* root */
+
+:root {
+    --font_12: 12px;
+}
+
+
+
+/* Navbar -top */
+.navbar_top{
+    background-color: white;
+}
+.navbar_top_search {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+}
+
+.navbar_top_search > input {
+    background-color: #e5e5e5;
+}
+
+.navbar_top_search > .fa-magnifying-glass {
+    font-size: 14px;
+}
+
+.ms_navbar {
+    background-color: #f8f9fa;
+}
+
+::placeholder {
+    color: #777777;
+    font-size: var(--font_12);
+}
+
+.navbar_top_menu-items {
+    padding-left: 5px;
+    padding-right: 10px;
+    color: #5b5858;
+}
+
+.navbar_top_menu-items a {
+    color: #5b5858;
+}
+
+.fa-bell {
+    color: #ff8f00;
+}
 
 
 
@@ -30,7 +77,7 @@
 
 /* debug */
 
-.debug .navbar, 
+/* .debug .ms_navbar, 
 .debug .app-content, 
 .debug .side-bar, 
 .debug .main-content {
@@ -41,4 +88,19 @@
 .debug #app {
     border: 2px solid green;
     padding: 5px;
+} */
+
+.debug [class^=col-] {
+    border: 2px solid violet;
+    padding: 2px;
+}
+
+.debug .row {
+    border: 2px solid orange;
+    padding: 2px;
+}
+
+.debug .container,
+.debug .container-fluid {
+    border: 1px solid blue;
 }
