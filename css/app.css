@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* debug */
+
+.debug .navbar, 
+.debug .app-content, 
+.debug .side-bar, 
+.debug .main-content {
+    border: 2px solid red;
+    padding: 5px;
+}
+
+.debug #app {
+    border: 2px solid green;
+    padding: 5px;
+}
