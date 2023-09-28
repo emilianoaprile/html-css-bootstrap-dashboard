@@ -11,7 +11,7 @@
     <title>bootstrap Dashboard</title>
 </head>
 
-<body class="debug">
+<body class="debu">
     <!-- Page Wrapper -->
     <div id="app" class="vh-100 d-flex flex-column">
 
@@ -35,24 +35,24 @@
                     </div>
                     <div class="col-auto">
                         <ul class="navbar_top_menu list-unstyled d-flex m-0">
-                            <li class="navbar_top_menu-items d-none d-sm-block">
+                            <li class="navbar_top_menu-items d-none d-md-block">
                                 <a href="#">
                                     <i class="fa-solid fa-list-ul"></i>
                                 </a>
                             </li>
-                            <li class="navbar_top_menu-items d-none d-sm-block">
+                            <li class="navbar_top_menu-items d-none d-md-block">
                                 <a href="#">
                                     <i class="fa-solid fa-circle-question"></i>
                                 </a>
                             </li>
-                            <li class="navbar_top_menu-items d-none d-sm-block">
+                            <li class="navbar_top_menu-items d-none d-md-block">
                                 <a href="#">
                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                 </a>
                             </li>
                             <li class="navbar_top_menu-items">
                                 <a href="#">
-                                    <i class="fa-solid fa-bell"></i>
+                                    <i class="fa-solid fa-bell"></i> <!--questo è un dropdown bootstrap-->
                                 </a>
                             </li>
                         </ul>
@@ -78,9 +78,7 @@
                                 <div class="icon_wrapper">
                                     <i class="fa-solid fa-chart-simple fa-lg"></i>
                                 </div>
-                                <div class="navbar_side-text d-none d-md-block">Stats<icon-wrapper
-                                
-                            </li>
+                                <div class="navbar_side-text d-none d-md-block">Stats<icon-wrapper </li>
                             <li class="navbar_side-menu-items">
                                 <div class="icon_wrapper">
                                     <i class="fa-solid fa-signal fa-sm"></i>
@@ -94,7 +92,7 @@
                         <div class="icon_wrapper">
                             <i class="fa-solid fa-gear fa-lg"></i>
                         </div>
-                        
+
                         <div class="navbar_side-text d-none d-md-block">Admin</div>
 
                     </div>
@@ -104,21 +102,84 @@
             </header>
             <main class="main_content flex-grow-1">
                 <!-- Main content -->
-                <div class="main_content-header">
+                <div class="main_content-header py-3 text-white">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-12 order-2 order-md-1 col-md-4 col-lg-6">
-                                
+                            <div class="col-12 order-2 order-md-1 col-md-4 col-lg-6 col-xl-6 flex-shrink-0">
+                                <div class="content_header-plans d-flex align-items-center column-gap-2">
+                                    <h1 class="content_title fw-medium m-0">Boolean</h1>
+                                    <div class="header_plans-btn">
+                                        <a class="ms_btn" href="#">Piano Blaze</a>
+                                    </div>
+                                </div>
+
+                                <div class="content_header-plans d-flex align-items-center column-gap-2 mt-1">
+                                    <ul class="list-unstyled m-0 d-flex column-gap-1 align-items-center">
+                                        <li class="align-self-center">
+                                            <a class="ms_btn" href="#">3 App</a>
+                                        </li>
+                                        <li class="header_plans-icon">
+                                            <a href="#"><i class="fa-solid fa-angles-right text-white"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="ms_btn d-lg-none" href="#"><i class="fa-solid fa-plus"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class=" ms_btn d-none d-lg-block" href="#">Boolean mobile app</a>
+                                        </li>
+                                        <li>
+                                            <a class="ms_btn d-none d-lg-block" href="#">Boolean web app</a>
+                                        </li>
+                                        <li>
+                                            <a class="ms_btn d-none d-lg-block" href="#">Boolean blog app</a>
+                                        </li>
+                                    </ul>
+                                    <!-- capire perchè il primo li non si allinea con gli altri verticalmente -->
+                                </div>
                             </div>
-                            <div class="col-12 order-2 order-md-1 col-md-4 col-lg-4">
-                                
+                            <div class="col-12 order-2 order-md-1 col-md-4 col-lg-3 col-xl-4">
+                                <div class="content_header-students">
+                                    <div class="last_students">
+                                        Studenti negli ultimi 30 minuti
+                                    </div>
+
+                                    <div class="students_number fs-3">
+                                        125
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="col-12 order-1 order-md-2 col-md-4 col-lg-2">
-                                
+                            <div class="col-12 order-1 order-md-2 col-md-4 col-lg-3 col-xl-2">
+                                <div class="content_header-students d-flex column-gap-4 align-items-center">
+                                    <div class="new_student">
+                                        Nuovo studente
+                                    </div>
+                                    <div class="new_student-plus-btn">
+                                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                                            aria-labelledby="offcanvasExampleLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div>
+                                                    Some text as placeholder. In real life you can have the elements you
+                                                    have chosen. Like, text, images, lists, etc.
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
             </main>
 

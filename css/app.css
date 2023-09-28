@@ -3,6 +3,7 @@
 :root {
     --font_12: 12px;
     --font_16: 16px;
+    --font_28: 28px;
 }
 
 
@@ -74,6 +75,34 @@
 
 .navbar_side-text {
     font-size: var(--font_16);
+}
+
+/* Main content - header */
+
+.main_content-header {
+    background-color: #1d72e8;
+}
+
+.content_title {
+    font-size: var(--font_28);
+}
+
+.ms_btn {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px 7px;
+    border-radius: 20px;
+}
+
+.content_header-students,
+.new_student {
+    font-size: var(--font_12);
+}
+
+.header_plans-icon > a {
+    font-size: var(--font_12);
 }
 
 
