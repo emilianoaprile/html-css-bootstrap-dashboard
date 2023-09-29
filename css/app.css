@@ -1,3 +1,9 @@
+.main_content {
+    overflow-y: auto;
+    max-height: calc(100vh - 61px); 
+}
+
+
 /* root */
 
 :root {
@@ -5,8 +11,6 @@
     --font_16: 16px;
     --font_28: 28px;
 }
-
-
 
 /* Navbar - top */
 .navbar_top{
@@ -55,7 +59,6 @@
     background-color:  #041e34;
     background-image: url(../img/sidebar-bg.png);
     width: 65px; 
-    /* width: 150px; */
     height: 100%;
 }
 
@@ -97,13 +100,43 @@
 }
 
 .content_header-students,
-.new_student {
+.new_student,
+.ms_table {
     font-size: var(--font_12);
 }
 
 .header_plans-icon > a {
     font-size: var(--font_12);
 }
+
+/* Prossime classi table */
+
+td > img {
+    width: 20px;
+}
+
+.table_icons {
+    display: inline-block;
+    border: 1px solid grey;
+    text-align: center;
+    line-height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    margin-right: 3px;
+}
+
+/* FAQ */
+
+.ms_accordion-body {
+    font-size: var(--font_12);
+}
+
+button.ms_accordion-header,
+label.ms_form-check-label {
+    font-size: 12px;
+}
+
+
 
 
 /* Media Query - Responsive */
