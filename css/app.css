@@ -132,7 +132,8 @@ td > img {
 }
 
 button.ms_accordion-header,
-label.ms_form-check-label {
+label.ms_form-check-label,
+.ms_card-text {
     font-size: 12px;
 }
 
