@@ -22,7 +22,8 @@
                     <div class="col-auto">
                         <div class="navbar_top_logo">
                             <a class="navbar-brand" href="#">
-                                <img src="./img/logo.svg" alt="Boolean" width="135">
+                                <img class="d-none d-md-block" src="./img/logo.svg" alt="Boolean" width="135">
+                                <img class="logo_mobile d-block d-md-none" src="./img/mobile-logo.png" alt="Boolean">
                             </a>
                         </div>
                     </div>
@@ -58,7 +59,7 @@
                                             <li><a class="dropdown-item ms_card-text" href="#">Profilo</a></li>
                                             <li><a class="dropdown-item ms_card-text" href="#">Fatturazione</a></li>
                                             <li><a class="dropdown-item ms_card-text" href="#">Log out</a></li>
-                                          </ul>
+                                        </ul>
                                     </a>
                                 </div>
                             </li>
@@ -70,31 +71,32 @@
 
         <div class="app_content d-flex flex-grow-1">
             <header class="side_bar flex-shrink-0 text-white py-4">
-                <!-- Nav menu - side -->
+                <!-- Nav menu - side START -->
                 <nav class="navbar_side d-flex flex-column align-items-center">
-                    <div class="col-auto flex-grow-1">
-                        <ul class="navbar_side-menu list-unstyled m-0">
-                            <li class="navbar_side-menu-items">
-                                <div class="icon_wrapper">
-                                    <i class="fa-solid fa-house"></i>
-                                </div>
-                                <div class="navbar_side-text d-none d-md-block">Home</div>
-                            </li>
-                            <li class="navbar_side-menu-items">
-                                <div class="icon_wrapper">
-                                    <i class="fa-solid fa-chart-simple fa-lg"></i>
-                                </div>
-                                <div class="navbar_side-text d-none d-md-block">Stats<icon-wrapper </li>
-                            <li class="navbar_side-menu-items">
-                                <div class="icon_wrapper">
-                                    <i class="fa-solid fa-signal fa-sm"></i>
-                                </div>
-                                <div class="navbar_side-text d-none d-md-block">Signals</div>
-                            </li>
-                        </ul>
-                    </div>
 
-                    <div class="col-auto d-flex m-0">
+                    <ul class="navbar_side-menu flex-grow-1 list-unstyled m-0">
+                        <li class="navbar_side-menu-items">
+                            <div class="icon_wrapper">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div class="navbar_side-text d-none d-md-block">Home</div>
+                        </li>
+                        <li class="navbar_side-menu-items">
+                            <div class="icon_wrapper">
+                                <i class="fa-solid fa-chart-simple fa-lg"></i>
+                            </div>
+                            <div class="navbar_side-text d-none d-md-block">Stats</div>
+                        </li>
+                        <li class="navbar_side-menu-items">
+                            <div class="icon_wrapper">
+                                <i class="fa-solid fa-signal fa-sm"></i>
+                            </div>
+                            <div class="navbar_side-text d-none d-md-block">Signals</div>
+                        </li>
+                    </ul>
+
+
+                    <div class="d-flex m-0">
                         <div class="icon_wrapper">
                             <i class="fa-solid fa-gear fa-lg"></i>
                         </div>
@@ -104,10 +106,12 @@
                     </div>
 
                 </nav>
-
             </header>
+            <!-- Nav menu - side END -->
+
+            <!-- Main content START -->
             <main class="main_content flex-grow-1">
-                <!-- Main content -->
+                
                 <div class="main_content-header py-2 text-white">
                     <div class="container-fluid">
                         <div class="row">
@@ -346,7 +350,8 @@
                                     </div>
                                 </div>
                             </div>
-
+                            
+                            <!-- FAQs START -->
                             <div class="faq mt-4">
                                 <div class="card">
                                     <div class="card-header">
@@ -403,8 +408,11 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- FAQs END -->
 
                         </div>
+
+                        <!-- TODO START -->
                         <div class="col-12 col-lg-4">
                             <div class="todo mt-4">
                                 <div class="card">
@@ -433,13 +441,16 @@
                                     </ul>
                                 </div>
                             </div>
+                            <!-- TODO END -->
 
+                            <!-- STATISTICHE START -->
                             <div class="statistiche mt-4">
                                 <div class="card">
                                     <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h6 class="card-title">Utenti attivi</h6>
-                                        <p class="card-text ms_card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                        <p class="card-text ms_card-text">Lista degli utenti attivi in piattaforma
+                                            nell'ultimo mese</p>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item ms_card-text">Gennaio: 1200</li>
@@ -451,10 +462,13 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <!-- STATISTICHE END -->
                         </div>
                     </div>
+                </div>
+                 <!-- Main content - cards END -->    
             </main>
+            <!-- Main content END -->
 
         </div>
 

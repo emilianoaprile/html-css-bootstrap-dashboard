@@ -16,6 +16,12 @@
 .navbar_top{
     background-color: white;
 }
+
+.logo_mobile {
+    height: 40px;
+    width: 100%;
+}
+
 .navbar_top_search {
     background-color: #e5e5e5;
     border-radius: 5px;
@@ -113,6 +119,7 @@
 
 td > img {
     width: 20px;
+    height: 20px;
 }
 
 .table_icons {
